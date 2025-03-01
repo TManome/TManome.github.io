@@ -25,7 +25,7 @@ paginate:	5
 url: "https://tmanome.github.io/" # the base hostname & protocol for your site
 baseurl: ""
 #used to display twitter cards
-twitter_handle: ''
+twitter_handle: 'Foxy.beatz'
 
 #fill in disqus shortname to use disqus
 #disqus: disqus-shortname
