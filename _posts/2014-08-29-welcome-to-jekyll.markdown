@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Test"
-date:   2025
+
+title: "Welcome to Jekyll!"
+date: 2025-01-01
 categories: test
 tags: featured
 image: 
