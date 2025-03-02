@@ -1,7 +1,25 @@
-<footer>
-    <p>© 2025 Teni Music Studio. All Rights Reserved.</p>
-    <div class="footer-image">
-        <img src="{{ 'assets/images/blaz-photo-cZWZjymwI9o-unsplash.jpg' | relative_url }}" alt="Footer Background" style="width: 100%;">
-    </div>
-</footer>
+<!DOCTYPE html>
+<html>
 
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <!-- content start -->
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    <!-- content end -->
+
+    {% include footer.html %}
+    {% include javascripts.html %}
+
+  </body>
+
+</html>
