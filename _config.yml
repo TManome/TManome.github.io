@@ -5,59 +5,47 @@ plugins:
 
 # Site settings
 title: "Teni Music Studio"
-description: > # this means to ignore newlines until "email:"
-   
+description: "Welcome to Teni's Music Studio, your source for fresh beats and musical inspiration."
+email: tenixxxv@gmail.com
 
-email: tenixxxv@gmail.mail
-#blog logo
+# Blog logo and cover
 logo: "assets/images/IMG_1865.jpeg"
-float_logo: false # true, false (default)
-
-# blog cover
+float_logo: false
 cover: "assets/images/wes-hicks-MEL-jJnm7RQ-unsplash.jpg"
 
-name: 'Teni'
-author: 'Teni'
+# Author info
+name: "Teni"
+author: "Teni"
 author_image: "assets/images/IMG_1865.jpeg"
 
-paginate:	5
+# Pagination
+paginate: 5
+paginate_path: "/page:num"
 
-url: "https://tmanome.github.io/" # the base hostname & protocol for your site
+# Site URL
+url: "https://tmanome.github.io"
 baseurl: ""
-#used to display twitter cards
-twitter_handle: 'Foxy.beatz'
 
-#fill in disqus shortname to use disqus
-#disqus: disqus-shortname
+# Social media and sharing
+twitter_handle: "Foxy.beatz"
 
-#google_analytics: UA-XXXXX-X
-
-# social icons and sharing options
 social:
-  - icon:	twitter
-    url:	https://x.com/foxy_beatz_?s=21&t=1rk3H6qlUdyFc_Gs3elv4Q
-    desc: Follow me on twitter
+  - icon: twitter
+    url: https://x.com/foxy_beatz_?s=21&t=1rk3H6qlUdyFc_Gs3elv4Q
+    desc: Follow me on Twitter
     share_url: https://x.com/foxy_beatz_?s=21&t=1rk3H6qlUdyFc_Gs3elv4Q
     share_title: ?text=
-    share_link: "&amp;url="
+    share_link: "&url="
 
-#  - icon:	facebook
-#    url:	https://facebook.com/???
-#    desc: Connect with me facebook
-#    share_url: https://www.facebook.com/sharer.php
-#    share_title: ?t=
-#    share_link: "&amp;u="
-
-  - icon:	github
-    url:	https://github.com
-    desc:	Fork me on github
+  - icon: github
+    url: https://github.com
+    desc: Fork me on GitHub
     share_url: https://github.com
     share_title:
     share_link:
 
-#  - icon:	google-plus
-#    url:	https://google.com/???
-#    desc:	Add me on google+
-#    share_url:
-#    share_title:
-#    share_link:
+# Uncomment to enable Disqus comments
+#disqus: your-disqus-shortname
+
+# Uncomment and replace UA-XXXXX-X to enable Google Analytics
+#google_analytics: UA-XXXXX-X
