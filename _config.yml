@@ -4,6 +4,9 @@ plugins:
   - jekyll-paginate
 
 # Site settings
+title: "Teni Music Studio"
+description: > # this means to ignore newlines until "email:"
+   音樂日誌與雜記
 footer:
   text: "© 2025 Teni Music Studio. All Rights Reserved."
   social_links:
