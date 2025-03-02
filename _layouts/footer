@@ -1,4 +1,4 @@
 <footer>
     <p>© 2025 Teni Music Studio. All Rights Reserved.</p>
-    <img src="{{ '/assets/images/footer-image.jpg' | relative_url }}" alt="Footer Image" style="width: 100%;">
+    <img src="{{ 'assets/images/blaz-photo-cZWZjymwI9o-unsplash.jpg' | relative_url }}" alt="Footer Image" style="width: 100%;">
 </footer>
