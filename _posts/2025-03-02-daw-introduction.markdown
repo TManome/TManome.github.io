@@ -5,10 +5,8 @@ title: "DAW入門"
 date: 2025-03-02
 categories: DTM
 tags: DTM
-image: assets/images/techivation-QkYp37lEc-o-unsplash.jpg
----
 image: "{{ site.baseurl }}/assets/images/techivation-QkYp37lEc-o-unsplash.jpg"
-
+---
 
 DAW軟體是數位編曲不可或缺的存在，幾乎所有作業都需在DAW上面完成。2024現在，大部分DAW功能都差不多，基本上A款軟體能做的事情，B款軟體一樣能做到，只是工作流程與方式不太一樣。然而選擇適合自己的DAW仍是相當重要的，工作流程會影響作品的完成效率。
 
