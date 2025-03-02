@@ -4,9 +4,15 @@ plugins:
   - jekyll-paginate
 
 # Site settings
-title: "Teni Music Studio"
-description: "音樂人雜記與日誌"
-email: "tenixxxv@gmail.com"
+footer:
+  text: "© 2025 Teni Music Studio. All Rights Reserved."
+  social_links:
+    - icon: twitter
+      url: https://x.com/foxy_beatz_
+      desc: "Follow me on Twitter"
+    - icon: github
+      url: https://github.com
+      desc: "Fork me on GitHub"
 
 # Blog logo and cover images
 logo: "assets/images/IMG_1865.jpeg"
