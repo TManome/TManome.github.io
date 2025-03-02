@@ -1,0 +1,49 @@
+name: Jekyll GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # 或者 'master'，取决于你的默认分支名称
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 检出代码
+      - name: Check out the repository
+        uses: actions/checkout@v3
+
+      # 设置 Ruby 环境
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1' # 指定 Ruby 版本（与 GitHub Pages 兼容的版本）
+
+      # 缓存依赖项以加快构建速度
+      - name: Cache Bundler gems
+        uses: actions/cache@v3
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
+      # 安装依赖项
+      - name: Install dependencies
+        run: |
+          bundle config set --local path 'vendor/bundle'
+          bundle install
+
+      # 构建 Jekyll 网站
+      - name: Build Jekyll site
+        run: bundle exec jekyll build --trace
+
+      # 部署到 GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
