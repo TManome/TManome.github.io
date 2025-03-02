@@ -10,7 +10,7 @@ email: "tenixxxv@gmail.com"
 
 # Blog logo and cover images
 logo: "assets/images/IMG_1865.jpeg"
-float_logo: false
+float_logo: true
 cover: "assets/images/wes-hicks-MEL-jJnm7RQ-unsplash.jpg"
 
 # Author information
